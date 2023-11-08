@@ -1,6 +1,5 @@
-import CryptoBuzz from "../contracts/CryptoBuzz.cdc";
-import NonFungibleToken from "../contracts/NonFungibleToken.cdc"
-
+import CryptoBuzz from 0x05
+import NonFungibleToken from 0x05
 
 transaction(account: Address) {
 
@@ -16,7 +15,7 @@ transaction(account: Address) {
 
 
 
-    let nft <- minter.createNFT(name:"CryptoBuzz", favouriteFood: "PIZZA", luckyNumber: 28)
+    let nft <- minter.createNFT(name:"CryptoBuzz", favouriteFood: "Hamburger", luckyNumber: 28)
 
     accountsCollection.deposit(token: <- nft)
   }
